@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="./css/main.min.css">  
 </head>
 <body>
   <header class="header">
     <div class="container header__content">
       <nav class="nav">
-            <a class="logo web header__logo" href="index.html" >Web<span class="header--black">Studio</span></a>
+            <a class="logo header__logo--color" href="index.html" >Web<span class="logo--black">Studio</span></a>
 
         <ul class="nav-list">
             <li class="nav__item"><a href="index.html" class="link nav__link">Студия</a></li>
@@ -26,14 +26,14 @@
      <div class="header__contacts">
          <p class="header__item">
            <a class="link header__link" href="mailto:info@example.com">
-           <svg class="icon-contacts" width="16" height="12">
+           <svg class="header__icon" width="16" height="12">
              <use href="images/icons.svg#icon-envelope"></use>
            </svg>
           info@example.com</a>
         </p>
          <p class="header__item">
            <a class="link header__link" href="telto:+380991111111">
-          <svg class="icon-contacts" width="10" height="16">
+          <svg class="header__icon" width="10" height="16">
             <use href="images/icons.svg#icon-smartphone"></use>
           </svg>+38 099 111 11 11</a>
         </p>
@@ -46,11 +46,11 @@
           <div class="container">
             <h1 class="visually-hidden">Наши проекты</h1>
            <ul class="projects__list">
-            <li class="projects__list-item"><button type="button" class="button projects__button projects__button--option">Все</button></li>
-            <li class="projects__list-item"><button type="button" class="button projects__button">Приложения</button></li>
-            <li class="projects__list-item"><button type="button" class="button projects__button">Веб-сайты</button></li>
-            <li class="projects__list-item"><button type="button" class="button projects__button">Дизайн</button></li>
-            <li class="projects__list-item"><button type="button" class="button projects__button">Маркетинг</button></li>
+            <li class="projects__list-item"><button type="button" class="projects__button projects__button--option">Все</button></li>
+            <li class="projects__list-item"><button type="button" class="projects__button">Приложения</button></li>
+            <li class="projects__list-item"><button type="button" class="projects__button">Веб-сайты</button></li>
+            <li class="projects__list-item"><button type="button" class="projects__button">Дизайн</button></li>
+            <li class="projects__list-item"><button type="button" class="projects__button">Маркетинг</button></li>
            </ul>
 
             <ul class="gallery">
@@ -169,45 +169,45 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-        <div class="container-contacts-footer">
-       <a class="logo web footer-logo" href="index.html" >Web<span class="studio-footer">Studio</span></a>
+        <div class="footer__container">
+        <div class="footer__contacts">
+       <a class="logo footer__logo--color" href="index.html">Web<span class="logo--white">Studio</span></a>
 
        <address class="address">
-           <p class="footer-hover">г. Киев, пр-т Леси Украинки, 26</p>
-           <a class="address-mail footer-hover" href="mailto:info@example.com" >info@example.com</a><br>
-           <a class="address-mail footer-hover" href="telto:+380991111111" >+38 099 111 11 11</a>
+           <p class="address--hover">г. Киев, пр-т Леси Украинки, 26</p>
+           <a class="address__mail address--hover" href="mailto:info@example.com" >info@example.com</a><br>
+           <a class="address__mail address--hover" href="telto:+380991111111" >+38 099 111 11 11</a>
        </address>
      </div>
 
-     <div class="container-contacts-footer">
-       <p>Присоединяйтесь</p>
+     <div class="footer__contacts">
+       <p class="footer__text">Присоединяйтесь</p>
 
-       <ul class="social-icons">
+       <ul class="social-icons social-icons__footer">
          <li class="social-icons__item">
            <a href="" class="social-icons__link" target="_blank" rel="noopener noreferrer">
-             <svg class="icon footer-icon" aria-label="instagram">
+             <svg class="icon footer__icon" aria-label="instagram">
                <use href="images/icons.svg#icon-instagram"></use>
              </svg>
            </a>
          </li>
          <li class="social-icons__item">
            <a href="" class="social-icons__link" target="_blank" rel="noopener noreferrer">
-             <svg class="icon footer-icon" aria-label="twitter">
+             <svg class="icon footer__icon" aria-label="twitter">
                <use href="images/icons.svg#icon-twitter"></use>
              </svg>
            </a>  
          </li>
          <li class="social-icons__item">
            <a href="" class="social-icons__link" target="_blank" rel="noopener noreferrer">
-             <svg class="icon footer-icon" aria-label="facebook">
+             <svg class="icon footer__icon" aria-label="facebook">
                <use href="images/icons.svg#icon-facebook"></use>
              </svg>
            </a>
          </li>
          <li class="social-icons__item">
            <a href="" class="social-icons__link" target="_blank" rel="noopener noreferrer">
-             <svg class="icon footer-icon" aria-label="linkedin">
+             <svg class="icon footer__icon" aria-label="linkedin">
                <use href="images/icons.svg#icon-linkedin"></use>
              </svg>
            </a>
@@ -215,15 +215,15 @@
        </ul>
      </div>
 
-     <div class="big-container-contacts-footer">
-       <p>Подпишитесь на рассылку</p>
-       <form class="footer-form">
-         <div class="footer-form-mail">
-         <input type="email" name="email" id="mail-footer" placeholder="E-mail">
+     <div class="form__container">
+       <p class="form__text">Подпишитесь на рассылку</p>
+       <form class="form__footer">
+         <div class="form__mail">
+         <input class="form__input" type="email" name="email" id="mail-footer" placeholder="E-mail">
         </div>
         
-        <div class="footer-form-button">
-          <button type="submit" class="button button-footer">
+        <div class="form__button">
+          <button type="submit" class="button form__button--footer">
           Подписаться
           <svg class="icon-send" width="24" height="24">
            <use href="images/icons.svg#icon-send"></use>
@@ -237,6 +237,7 @@
      </div> 
      </div>
    </footer>
+
 
 </body>
 </html>
